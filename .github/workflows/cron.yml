@@ -1,0 +1,7 @@
+name: cron-workflow
+on:
+  schedule:
+    - cron: "*/2 * * * *"
+jobs:
+  run-echo-job-action:
+    uses: ./.github/workflows/main.yml
